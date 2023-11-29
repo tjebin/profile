@@ -1,14 +1,16 @@
 
-const container = document.querySelectorAll('.container');
+const container = document.querySelector('.navbar-wrapper');
 document.querySelector('.open-navbar-icon').
     addEventListener('click', () => {
-        alert("clicked");
-        container.classList.add("change")
+        container.classList.add("changeMenu");
     });
-// document.querySelector('.close-navbar-icon').
-//     addEventListener('click', () => {
-//         container.classList.remove("change")
-//     });
+document.querySelector('.close-navbar-icon').
+    addEventListener('click', () => {
+        container.classList.remove("changeMenu");
+    });
+document.querySelector('.nav-list').addEventListener('click', () => {
+    container.classList.remove("changeMenu");
+});
 
 const colors = ["#6495ed", "#7fffd4", "#ffa07a", "#f08080", "#afeeee"];
 let i = 0;
