@@ -98,9 +98,12 @@ html {
   width:100%;
   height: 100%;
   display: flex;
+  justify-content: center;
 }
 .nav-link {
   font-size: 3rem;
+  justify-content:center;
+  align-items: center;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -128,7 +131,7 @@ html {
 .header-text {
     text-align:center;
     letter-spacing:0.1rem;
-    /* text-shadow:0.3rem 0.5rem #555; */
+    text-shadow:0.3rem 0.5rem 3rem rgba(18,113,255,.5);
 }
 .header {
     font-size:2rem;
@@ -256,7 +259,6 @@ html {
     /* padding:10rem 0; */
     margin: auto;
     position:relative;
-    border: 7px solid yellow;
 }
 .video-container {
     position:absolute;
@@ -316,13 +318,13 @@ html {
 /* Projects*/
 .projects {
     padding:5rem 0 10rem 0;
-    border: 1px solid blue;
 }
 .projects-heading {
     font-size:8rem;
     text-align:center;
     margin-bottom:8rem;
     color:#2b81e4;
+    background-color: #eee;
     text-shadow:0.1rem 0.2rem #2b81e4; 
 }
 .cards-wrapper {
@@ -425,24 +427,18 @@ html {
 /*End of  Projects */
 /* Educations */
 .educations {
-    padding:10rem 0 0rem 0;
-    /* padding:10rem 0; */
-    margin: auto;
+    margin-top: 10rem;
     position:relative;
-    border: 7px solid yellow;
+    width:100%;
+    height:100%;
 }
 .video-container {
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
     opacity: 0.4;
     object-fit:cover;
 }
 .bg-video {
-    width:100%;
-    height:100%;
+    object-fit:cover;
 }
 .educations-wrapper {
     display:flex;
@@ -450,12 +446,12 @@ html {
     align-items: center; 
 }
 .education-bg {
-    background-color: rgba(238,238,238,0.85);
+    background-color: rgba(238,238,238,1);
     padding:5rem; 
     margin:5rem;
     width:70%;
     box-shadow: 5px 5px 15px 0px rgba(0 ,0, 0, 0.3);
-    /* box-shadow:20px 20px 20px 5px; */
+    box-shadow:20px 20px 40px 5px;
     transform:skewX(20deg);
 }
 .education {
@@ -486,6 +482,71 @@ html {
     margin-left: 1rem;
 }
 /* End of Education */
+/* Work Experience */
+.experiences {
+    margin-top: 10rem;
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.experiences-heading {
+    font-size:8rem;
+    text-align:center;
+    margin-bottom:8rem;
+    background-color: #eee;
+    text-shadow:0.1rem 0.2rem #2b81e4;
+    text-shadow:0.1rem 0.2rem #2b81e4;
+}
+.video-container {
+    position:absolute;
+    opacity: 0.4;
+    object-fit:cover;
+}
+.bg-video {
+    object-fit:cover;
+}
+.experiences-wrapper {
+    display:flex;
+    flex-direction:column; 
+    align-items: center; 
+}
+.experience-bg {
+    background-color: rgba(238,238,238,0.9);
+    padding:5rem; 
+    margin:5rem;
+    width:70%;
+    box-shadow: 5px 5px 15px 0px rgba(0 ,0, 0, 0.3);
+    box-shadow:20px 20px 40px 5px;
+    transform:skewX(20deg);
+}
+.experience {
+    transform: skew(-20deg);
+    display:flex;
+}
+.experience-image {
+    width:20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5rem;
+}
+.experience-text {
+    letter-spacing: 1rem;
+}
+.experience-heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:#777;
+    margin-bottom: 1rem;
+}
+.experience-paragraph {
+    font-size:1.8rem;
+    color:#777;
+}
+.experience-paragraph::first-letter{
+    margin-left: 1rem;
+}
+/* End of Work Experience*/
 /* contact */
 .contact {
   padding: 15rem 0 20rem 0;
@@ -515,7 +576,6 @@ html {
   box-shadow: 0 1rem 3rem #000;
   padding: 5rem;
 }
-
 .input-group {
   width: 100%;
   display: flex;
@@ -523,13 +583,11 @@ html {
   margin: 1rem 0;
   position: relative;
 }
-
 .input-groups {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
 .input-groups .input-group {
   width: 48.5%;
 }
@@ -637,3 +695,26 @@ html {
   margin-top: 5rem;
 }
 /* End of Footer */
+/* Media Query */
+@media(max-width:1200px){
+  .cards-wrapper {
+    flex-direction:column;
+    align-items:center;
+  }
+  .card {
+    margin:0.3rem 0;
+  }
+  .education-bg {
+    width:85%;
+  }
+}
+@media(max-width:1000px){
+  .nav-list {
+    flex-direction:column;
+  }
+  .nav-link {
+    flex-grow:1;
+  }
+
+}
+/*End of Media Query */
