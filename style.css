@@ -130,11 +130,10 @@ html {
 }
 .header-text {
     text-align:center;
-    letter-spacing:0.1rem;
-    text-shadow:0.3rem 0.5rem 3rem rgba(18,113,255,.5);
+    letter-spacing:0.4rem;
+    font-style: italic;
 }
 .header {
-    font-size:2rem;
     color:#000;
     position: relative;
     perspective:100rem;
@@ -144,6 +143,7 @@ html {
     animation: image-float 50s infinite;
 }
 .quote {
+  font-size:4rem;
   margin: 0;
   background: #eee;
   padding: 1em;
@@ -304,6 +304,29 @@ html {
     font-size:1.8rem;
     color:#777;
 }
+/* back side */
+.back-side-paragraph-text {
+   font-size:2.8rem;
+   color:#eee;
+   margin-bottom: 2rem;
+}
+
+.back-side-card-list-item{
+    font-size: 2rem;
+    font-weight: 500;
+    color:#eee;
+    margin:2rem 0;
+    border-bottom:0.1rem solid #2b8;
+    padding:1.5rem;
+    letter-spacing: .2rem;
+}
+
+.back-side-paragraph-text p {
+   color:#eee;
+   /* margin-bottom: 4rem; */
+   border:5px solid black;
+   /* margin-top: 4rem; */
+}
 .experience-paragraph::first-letter{
     margin-left: 1rem;
 }
@@ -374,6 +397,12 @@ html {
     margin:2rem 0;
     border-bottom:0.1rem solid #2b81e4;
     padding:1.5rem;
+}
+ .tech-header {
+    font-weight:500;
+ }
+.card-tech-item {
+  letter-spacing: .6rem;
 }
 .back-side {
     position:absolute;
@@ -715,11 +744,9 @@ html {
     transform:translate(-50%,-50%);
     z-index:10;
   }
-  .heading {
-    font-size:6rem;
-  }
+ 
   .quote {
-    font-size:1.9rem;
+    font-size:3rem;
   }
   .projects-heading {
     font-size:5rem ;
@@ -764,7 +791,7 @@ html {
       font-size:2.5rem;
     }
     .header img {
-      z-index:10;
+      z-index:1;
     }
     .contact-form {
       width:90%;
