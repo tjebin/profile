@@ -27,3 +27,146 @@ html{
     justify-content:center;
     align-items:center;
 }
+
+/* Work Experience */
+.experiences {
+  padding: 10rem 0 10rem 0;
+  margin: auto;
+  position: relative;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  object-fit: cover;
+}
+.bg-video {
+  width: 100%;
+  height: 100%;
+}
+.experiences-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience-bg {
+  background-color: rgba(238, 238, 238, 1);
+  padding: 5rem;
+  margin: 5rem;
+  width: 70%;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  transform: skewX(0deg);
+}
+.experience {
+  display: flex;
+}
+.experience-image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5rem;
+}
+.experience-text {
+  letter-spacing: 1rem;
+}
+.experience-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 1rem;
+}
+.experience-location {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: lightslategray;
+  margin-bottom: 1rem;
+}
+.experience-paragraph {
+  margin-top:3rem;
+  font-size: 2rem;
+  color: #777;
+  text-align: justify;
+}
+/* End of Work Experience */
+
+
+.experiences {
+  margin-top: 10rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.experiences-heading {
+  font-size: 8rem;
+  text-align: center;
+  margin-bottom: 8rem;
+  background-color: #eee;
+  text-shadow: 0.1rem 0.2rem #2b81e4;
+  text-shadow: 0.1rem 0.2rem #2b81e4;
+}
+.video-container {
+  position: absolute;
+  opacity: 0.4;
+  object-fit: cover;
+}
+.bg-video {
+  object-fit: cover;
+}
+.experiences-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience-bg {
+  background-color: rgba(238, 238, 238, 0.9);
+  padding: 5rem;
+  margin: 5rem;
+  width: 70%;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 40px 5px;
+}
+.experience {
+  display: flex;
+}
+.experience-image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5rem;
+}
+.experience-text {
+  letter-spacing: 1rem;
+}
+.experience-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 1rem;
+  letter-spacing: 1rem;
+}
+.experience-paragraph {
+  font-size:  3rem;
+  color: #777;
+  letter-spacing: 1rem;
+}
+.experience-paragraph::first-letter {
+  margin-left: 1rem;
+}
+.work-list {
+  width: 80%;
+  padding: 2rem 0 3rem 0;
+}
+.work-list-item {
+  font-size:  3rem;
+  font-weight: 400;
+  color: #777;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  list-style-type: disc;
+  letter-spacing: normal;
+}
